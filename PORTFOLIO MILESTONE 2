@@ -1,0 +1,188 @@
+#------------------------------------------------------------------------
+# Program Name: ITS320_CTA4_Option2
+# Author: Aliciana Gondick
+# Date: Sep. 14, 2023
+#------------------------------------------------------------------------
+# Pseudocode:
+#   1. Input the number of students (between 1 and 30)
+#   2. For each student, input their test score
+#   3. Compile all scores
+#   4. Find the average score 
+#   5. Find the highest score
+#   6. Find the lowest score
+#------------------------------------------------------------------------
+# Program inputs: Number of students, test score for each student
+# Program Outputs: Average test score, lowest test score, highest test score, sorted scores
+#------------------------------------------------------------------------
+
+print("Highest score, lowest score, average score")
+
+Average = 0
+HowMany = 0
+Counter = 0
+Sum = 0
+Scores = ""
+InputValue = ""
+TotalStudents = ""
+Grades = []
+TestGrades = 0
+
+
+InputValue = input("How many students? ")
+if InputValue == "":
+    print("err: Must be a number")
+else:
+    if not (InputValue.isdigit()):
+
+	    print("err: Must be a number")
+    else:
+	    HowMany = int(InputValue)
+	    if (HowMany < 1) or (HowMany > 30):
+		    print("err: Class size is between 1 and 30")
+				
+			
+for i in range(1, HowMany+1):
+	Scores = input("Test scores: ")
+	Grades.append(Scores)
+	Grades.sort()
+	if Scores == "":
+		print("err: Must be a number")
+	else:
+		if not (Scores.isdigit()):
+			print("err: Must be a number")
+		else: 
+			Number = int(Scores)
+			if (Number > 100) or (Number < 0):
+				print("err: Score must be between 0 and 100")
+				
+	if Number == int(Number):
+		Counter = Counter + 1
+		Sum = Sum + Number
+	
+	
+
+TotalStudents = str(HowMany)
+TotalStudents.split()
+
+
+Final= int(TotalStudents)
+
+Average = (Sum)/(Final)
+    
+print("Student Scores: ",Grades)
+print("Average Score is: ", Average)
+if Scores == '100':
+    Grades[-1]=100
+    
+    print("Highest score is 100")
+else:
+    print("Highest Score is: ",Grades[-1])
+
+           
+print("Lowest Score is: ",Grades[0])
+
+#------------------------------------------------------------------------
+# Program Name: ITS320_CTA5_Option2.py
+# Author: Aliciana Gondick
+# Date: Sept. 17, 2023
+# Program Objective: Allow for user to input three strings...
+# Concatenate the first two, and reverse the third.
+#------------------------------------------------------------------------
+# Pseudocode:
+#   1. Program will prompt for three strings to be input by user.
+#   2. Function will concatenate the first two strings, and reverse the third
+#   3. Function will return concatenation, and reversed string
+#------------------------------------------------------------------------
+# Program Inputs: Three strings
+# Program Outputs: Concatenation of two strings, reversed third string
+#------------------------------------------------------------------------
+
+
+
+print("This program will concatenate two strings, and reverse the third.")
+
+
+
+def StringFunction():
+    String1 = input("type a word or phrase: ")
+    String2 = input("type another word or phrase: ")
+    String3 = input("this will be reversed: ")
+    a = String1 + String2 + ", "
+    b = String3[::-1]
+    c = a + b
+    return c
+print(StringFunction())
+    
+print("Thank you for using this program.")
+
+#------------------------------------------------------------------------
+# Program Name: ITS320_CTA6_Option1.py
+# Author: Aliciana Gondick
+# Date: Sept. 25, 2023
+# Program Objective: produce the sum, difference, product, dividend,
+# and modulus operand of two complex numbers
+#------------------------------------------------------------------------
+# Pseudocode:
+#   1. User will input complex numbers
+#   2. Program will create class for numbers as object
+#   3. Program will produce sum, difference, product, dividend, and mod. op.
+#------------------------------------------------------------------------
+# Program Inputs: Complex numbers
+# Program Outputs: Mathematical operations of complex numbers
+#------------------------------------------------------------------------
+
+print("This will produce the following input for two complex numbers: \nC + D\nC - D\nC * D\nC / D\nmod(C)\nmod(D)")
+print("Please input your numbers")
+
+import math
+
+
+class Complex(object):
+    def __init__(self, real, imaginary):
+        self.real = real
+        self.imaginary = imaginary
+    
+    def __add__(self, no):
+        real = self.real + no.real
+        imaginary = self.imaginary + no.imaginary
+        return Complex(real,imaginary)
+
+    def __sub__(self, no):
+        real = self.real - no.real
+        imaginary = self.imaginary - no.imaginary
+        return Complex(real, imaginary)
+
+    def __mul__(self, no):
+        real = self.real * no.real
+        imaginary = self.imaginary * no.imaginary
+        return Complex(real, imaginary)
+
+    def __truediv__(self, no):
+        real = self.real / no.real
+        imaginary = self.imaginary / no.imaginary
+        return Complex(real, imaginary)
+
+    def mod(self):
+        real = (self.real**2 + self.imaginary**2)**0.5
+        return Complex(real, 0)
+
+    def __str__(self):
+        if self.imaginary == 0:
+            result = "%.2f+0.00i" % (self.real)
+        elif self.real == 0:
+            if self.imaginary >= 0:
+                result = "0.00+%.2fi" % (self.imaginary)
+            else:
+                result = "0.00-%.2fi" % (abs(self.imaginary))
+        elif self.imaginary > 0:
+            result = "%.2f+%.2fi" % (self.real, self.imaginary)
+        else:
+            result = "%.2f-%.2fi" % (self.real, abs(self.imaginary))
+        return result
+
+# put this code in a main method
+C = map(float, input().split())
+D = map(float, input().split())
+x = Complex(*C)
+y = Complex(*D)
+print ('\n'.join(map(str, [x+y, x-y, x*y, x/y, x.mod(), y.mod()]))) 
