@@ -1,0 +1,46 @@
+Lessons Learned in ITS320-1
+ 
+Aliciana Gondick
+Colorado State University Global
+ITS320-1: Basic Programming
+Ray Fernandez
+10/08/2023
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+Lessons Learned in ITS320-1
+Abstract
+In this course, I have had the privilege of being guided by my instructor, Ray Fernandez, through the fundamental concepts of basic programming within the Python coding language. This essay summarizes the lessons I've learned, including but not limited to the principal components of developing a program, strategies used in writing programs, data types, control structures, functions, object-oriented programming (OOP), exceptions, and modules.
+ 
+Principal components of Developing a Program
+When embarking on the journey of programming, it is essential to understand the fundamental components that contribute to the development of any software program. All software projects follow a structured path of problem-solving, commonly referred to as the Program Development Life Cycle (PDLC). This cycle encompasses phases such as planning, analysis, design, implementation, testing, deployment, and maintenance (Bhakhra, S., 2018). These phases ensure a comprehensive understanding of the problem, meticulous planning, effective implementation, rigorous testing, successful deployment, and sustainable maintenance.
+Data Types
+Python's versatility is evident in its support for various data types that can be employed within a program. Python is a dynamically typed language, meaning that the data type of a variable is decided upon assignment without the need for explicit declaration, as is often needed in other programming languages. Python offers a range of data types, including numeric types (integers, floats, and complexes), string types, sequence types (lists, tuples, and ranges), binary types (bytes, bytearray, and memoryview), mapping types (dictionaries), boolean types, and set types (sets and frozensets) (Python Data Types, n.d.).
+Loops
+An essential and often used tool in programming is the loop. Loops in Python are categorized into two main types: 'for' and 'while' loops, each serving distinct purposes. In both 'for' and 'while' loops, a specific block of code executes repeatedly until a certain condition is met. Without an exit condition, the loop will execute indefinitely. 'For' loops are employed when the number of iterations is predetermined, iterating a specified number of times set by the loop's parameters. In contrast, 'while' loops are utilized when a block of code should repeat as long as a specific condition remains true (Hsu, Jonathan, 2022).
+Functions
+Functions in Python are blocks of code designed to perform specific tasks when called or invoked. Functions can be created by following the proper syntax, starting with the 'def' keyword followed by the function name, and finally a pair of parentheses. Optional parameters can be included within the parentheses. The line below holds the function body, where the actual code to be executed resides. Python also supplies a set of built-in functions such as 'print()', 'input()', 'range()', and 'enumerate()' (PEP 8 – Style Guide for Python Code, n.d.).
+Object-Oriented Programming
+Object-Oriented Programming (OOP) is a cornerstone of Python's programming paradigm. In Python, every entity is treated as an object, encapsulating both data and the functions that manipulate it. OOP promotes code reusability, modularity, and self-contained development, making it an ideal approach for structuring complex applications. Key concepts of OOP include classes (blueprints for creating objects), objects (instances of classes), attributes (class variables), methods (functions within classes), inheritance (mechanism for inheriting attributes and methods), polymorphism (treating objects of different classes as a common base class), abstraction (simplifying complex systems using abstract classes and methods), association (representing relationships between classes), and composition (combining classes by containing instances of others) (Object-Oriented Programming in Python, 2022).
+Conclusion 
+In summary, the comprehensive education provided in ITS320 has equipped me with a solid foundation in basic programming using the Python language. Despite the course's designation as 'Basic Programming,' I have comfortably delved into complex programming concepts. This journey has been both enlightening and empowering, and I look forward to applying my newfound knowledge and skills to future programming endeavors.
+
+
+
+
+
+References
+Bhakhra, S. (2018, November 2). Software Engineering | Program Development Life Cycle (PDLC) - GeeksforGeeks. GeeksforGeeks. https://www.geeksforgeeks.org/software-engineering-program-development-life-cycle-pdlc/
+Python Data Types (With Complete List) | DigitalOcean. (n.d.). Www.digitalocean.com. 	https://www.digitalocean.com/community/tutorials/python-data-types
+Hsu, Jonathan (2022, August 25). How to Pick Between a For Loop and While Loop | Built In. (n.d.). Builtin.com. https://builtin.com/software-engineering-perspectives/for-loop-vs-while-loop
+PEP 8 – Style Guide for Python Code | peps.python.org. (n.d.). Peps.python.org. https://peps.python.org/pep-0008/#function-and-method-arguments
+Object-Oriented Programming in Python. (2022, February 2). FreeCodeCamp.org. https://www.freecodecamp.org/news/object-oriented-programming-in-python/
